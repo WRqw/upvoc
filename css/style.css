@@ -32,8 +32,11 @@ body{
 	color: #5D5D5D;
 }
 a{
-	color: #5D5D5D;
+	
 	text-decoration: none;
+}
+a.register{
+	color: #5D5D5D;
 }
 ul{
 	list-style: none;
@@ -92,16 +95,16 @@ p{
 	display: inline-block;
 	margin-left: 30px;
 }
-.login-form input[type="text"],
-.login-form input[type="password"] {
+.login,
+.password {
 	padding: 6px 10px;
 	font-family: 'Helvetica', sans-serif;
 	color: #ccc;
 	border: 1px solid #3D434B;
 	outline: none;
 }
-.login-form input[type="text"]:focus,
-.login-form input[type="password"]:focus{
+.login:focus,
+.password:focus{
 	outline: none;
 }
 .ic{
@@ -112,7 +115,7 @@ p{
 	height: 35px;
 	font-size: 0;
 	text-decoration: none;
-	background:  url("../img/social-icons.jpg");
+	background:  url("../img/social-icons.jpg") no-repeat;
 }
 .soc-ic{
 	margin-left: 30px;
@@ -147,9 +150,6 @@ p{
 	padding-left: 40px;
 
 }
-.menu li:first-child{
-	
-}
 .menu{
 	text-align: center;
 	font-family: 'Condensed-Bold', sans-serif;
@@ -160,4 +160,73 @@ p{
 }
 .main-header{
 	border-bottom: 5px solid #E74A42;
+	background: #F9F9F9;
 }	
+.middle-section{
+	margin-top: 10px;
+}
+.top-line{
+	width: 100%;
+	background: #FFFF6D url("../img/top-line-bg.png") no-repeat;
+}
+.title-line{
+	padding-left: 30px;
+	font: 16px/18px 'Helvetica', sans-serif;
+	vertical-align: middle;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #3D434B;
+}
+.titlebox{
+
+	float: left;
+}
+.allocation{
+	margin-left: 200px;
+	float: left;
+}
+.allocation p{
+	padding: 12px 0;
+	font: 16px 'Myriad', sans-serif;
+}
+.showbtn{
+	float: right;
+	padding: 14px 0;
+	margin-right: 100px;
+	position: relative;
+}
+.checkbox{
+	display: none;
+}
+.checkbox + label{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.checkbox + label::before{
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: -20px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #5B5B5B;
+	background: #F9F9F9;
+}
+
+.checkbox:checked + label::before{
+	background: #F9F9F9 url("../img/check.png") no-repeat;
+}
+.close{
+	position: absolute;
+	top: 0;
+	right: -70px;
+	width: 40px;
+	height: 40px;
+	float: right;
+	font-size: 0;
+	cursor: pointer;
+	background: url("../img/show-cross.png") no-repeat center;
+
+}
