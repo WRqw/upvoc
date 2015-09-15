@@ -23,6 +23,7 @@
     src: url(../fonts/RobotoRegular.ttf); /* Путь к файлу со шрифтом */
    }
 
+
 body{
 	margin: 0;
 	padding: 0;
@@ -32,7 +33,7 @@ body{
 	color: #5D5D5D;
 }
 a{
-	
+	color: #999999;
 	text-decoration: none;
 }
 a.register{
@@ -347,22 +348,33 @@ p{
 	color: #999999;
 }
 .settings-title h3{
-
+	
 	font: 26px/31px 'Condensed-Bold', sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
-	padding-left: 25px;
+	margin-left: 25px;
+	padding-bottom: 5px;
 	color: #999999;
 	vertical-align: 30px;
-	
-
+}
+.settings-title{
+	position: relative;
+}
+.settings-title:after{
+	content: "";
+	top: 40px;
+	left: 14px;
+	position: absolute;
+	width: 254px;
+	height: 1px;
+	background: #999999;
 }
 .settings-title a{
 	color: inherit;
 }
 .settings-title h3:after{
 	cursor: pointer;
-	top: 40px;
+	top: 13px;
 	right: 70px;
 	content: "";
 	width: 136px;
@@ -375,3 +387,97 @@ p{
 	padding-left: 25px;
 	font: 15px 'Helvetica', sans-serif;
 }
+.bar{
+	width: 70%;
+}
+.range-filter{
+	width: 174px;
+	
+}
+.range-controls{
+	position: relative;
+	padding-top: 8px;
+		overflow: hidden;
+		padding-bottom: 20px;
+		margin-left: 25px;
+}
+.range-controls .scale{
+	
+	height: 1px;
+	background: #999999;
+}
+.range-controls .toggle{
+	position: absolute;
+	top: 2px;
+	background: #F7F7F7;
+	width: 12px;
+	height: 12px;
+	border:1px solid #999999;
+	border-radius: 50%;
+}
+.range-controls .mid-toggle{
+	left: 70px;
+}
+.range-controls .max-toggle{
+	left: 135px;
+	
+}
+.settings-lang-dif h4{
+	padding-left: 25px;
+	font: 15px 'Helvetica', sans-serif;
+	color: #999999;
+}
+.center-toggle{
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #2A81B4;
+}
+.range-controls-hard{
+	position: absolute;
+	left: 125px;
+	bottom: -2px;
+	font: 11px 'Helvetica', sans-serif;
+	color: #999999;
+	font-style: italic;
+}
+.settings-lang h4{
+	margin-top: 20px;
+	margin-bottom: 5px;
+	position: relative;
+	padding-left: 25px;
+	font: 15px 'Helvetica', sans-serif;
+	color: #999999;
+}
+.settings-lang h4:after{
+	cursor: pointer;
+	top: 9px;
+	right: 135px;
+	content: "";
+	width: 123px;
+	height: 10px;
+	position: absolute;
+	background: url("../img/settings-lang.png") no-repeat center;
+}
+.settings-lang{
+	position: relative;
+	padding-bottom: 40px;
+}
+.settings-lang:after{
+	content: "";
+	top: 40px;
+	left: 14px;
+	position: absolute;
+	width: 254px;
+	height: 1px;
+	background: #999999;
+}
+.lang{
+	margin-left: 25px;
+	font: 10px 'Helvetica', sans-serif;
+	color: #999999;
+}
+
