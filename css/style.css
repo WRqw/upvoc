@@ -6,6 +6,22 @@
     font-family: 'Phosphate'; /* Гарнитура шрифта */
     src: url(../fonts/Phosphate.ttf); /* Путь к файлу со шрифтом */
    }
+     @font-face {
+    font-family: 'Helvetica'; /* Гарнитура шрифта */
+    src: url(../fonts/HelveticaLight.eot); /* Путь к файлу со шрифтом */
+   }
+     @font-face {
+    font-family: 'Condensed-Bold'; /* Гарнитура шрифта */
+    src: url(../fonts/DIN Condensed Bold.ttf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: 'Myriad'; /* Гарнитура шрифта */
+    src: url(../fonts/MyriadPro-It.otf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: 'Roboto-Regular'; /* Гарнитура шрифта */
+    src: url(../fonts/RobotoRegular.ttf); /* Путь к файлу со шрифтом */
+   }
 
 body{
 	margin: 0;
@@ -13,6 +29,14 @@ body{
 	font-family: 'Myriad Pro';
 	font-size: 12px;
 	line-height: 14px;
+	color: #5D5D5D;
+}
+a{
+	color: #5D5D5D;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
 }
 .clearfix:after {
 	content: "";
@@ -26,6 +50,12 @@ body{
 	font-size: 42px;
 	line-height: 51px;
 	padding: 35px;
+	float: left;
+	padding-top: 55px;
+}
+.logo a,
+.menu a{
+	color: #323232;
 }
 .logo-p{
 	padding: 0;
@@ -38,3 +68,96 @@ p{
 	margin: 0;
 	padding: 0;
 }
+.header{
+	float: left;
+	margin-left: 40px;
+}
+.form-p{
+ display: inline-block;
+}
+.top-section{
+	margin-top: 43px;
+	width: 900px;
+	border-bottom: 1px solid #3D434B;
+	padding-bottom: 15px;
+}
+.content{
+	text-align: center;
+}	
+.login-form{
+	margin-left: 30px;
+	display: inline-block;
+}
+.soc-p{
+	display: inline-block;
+	margin-left: 30px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+	padding: 6px 10px;
+	font-family: 'Helvetica', sans-serif;
+	color: #ccc;
+	border: 1px solid #3D434B;
+	outline: none;
+}
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus{
+	outline: none;
+}
+.ic{
+	margin: 0 2px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 35px;
+	height: 35px;
+	font-size: 0;
+	text-decoration: none;
+	background:  url("../img/social-icons.jpg");
+}
+.soc-ic{
+	margin-left: 30px;
+	display: inline-block;
+}
+
+.soc-ic a{
+	display: inline-block;
+	
+}
+.vk-ic{
+	
+	background-position: -157px -143px;
+}
+.vk-fb{
+	
+	background-position: -243px -143px;
+}
+.vk-ok{
+	
+	background-position: -412px -143px;
+}
+.register{
+	margin-left: 20px;
+	text-decoration: none;
+}
+.reg{
+	text-decoration: underline;
+}
+.menu li{
+	display: inline-block;
+	padding-left: 40px;
+
+}
+.menu li:first-child{
+	
+}
+.menu{
+	text-align: center;
+	font-family: 'Condensed-Bold', sans-serif;
+	font-size: 26px;
+	line-height: 32px;
+	color: black;
+	text-transform: uppercase;
+}
+.main-header{
+	border-bottom: 5px solid #E74A42;
+}	
