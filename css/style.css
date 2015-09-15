@@ -268,17 +268,17 @@ p{
 .left-inter{
 
 	position: relative;
-	margin-left: 30px;
+	margin-left: 50px;
 }
 .right-inter{
 	position: relative;
-	margin-left: 35px;
+	margin-left: 55px;
 
 }
 .left-inter:after{
 	cursor: pointer;
 	top: 0px;
-	right: -25px;
+	right: -15px;
 	content: "";
 	width: 56px;
 	height: 20px;
@@ -303,7 +303,75 @@ p{
 	border: 2px solid #999999;
 	position: absolute;
 	top: 15px;
-	left: 150px;
+	left: 145px;
 	margin: 10px auto;
 	background: url('../img/box-arrows.png') no-repeat center;
+}
+.settings-section{
+	float: left;
+	width: 284px;
+	background: #F7F7F7;
+	margin-left: 20px;
+	margin-top: 20px;
+	position: relative;
+}
+.checkbox-settings{
+	display: none;
+}
+.checkbox-settings + label{
+	position: relative;
+	
+	cursor: pointer;
+}
+.checkbox-settings + label::before{
+	content: "";
+	position: absolute;
+	left: -25px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #999999;
+	background: #F9F9F9;
+}
+
+.checkbox-settings:checked + label::before{
+	background: #F9F9F9 url("../img/settings-checked.png") no-repeat;
+}
+.box{
+	padding-left: 45px;
+	font: 11px/13px 'Helvetica', sans-serif;
+	padding-bottom: 3px;
+	font-style: italic;
+
+}
+.settings-news{
+	color: #999999;
+}
+.settings-title h3{
+
+	font: 26px/31px 'Condensed-Bold', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-left: 25px;
+	color: #999999;
+	vertical-align: 30px;
+	
+
+}
+.settings-title a{
+	color: inherit;
+}
+.settings-title h3:after{
+	cursor: pointer;
+	top: 40px;
+	right: 70px;
+	content: "";
+	width: 136px;
+	height: 15px;
+	position: absolute;
+	background: url("../img/settings-title-underline.png") no-repeat center;
+
+}
+.news-title{
+	padding-left: 25px;
+	font: 15px 'Helvetica', sans-serif;
 }
