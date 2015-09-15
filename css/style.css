@@ -228,5 +228,82 @@ p{
 	font-size: 0;
 	cursor: pointer;
 	background: url("../img/show-cross.png") no-repeat center;
+}
+.left-window{
+	float: left;
+	margin-left: 100px;
+}
+.right-window{
+	float: right;
+	margin-right: 100px;
+}
+.translate-block{
+	padding: 5px 0;
+	margin-top: 10px;
+	width: 100%;
+	background: #F7F7F7;
+}
+.translate-block textarea{
+	border: 1px solid #999999;
+	width: 520px;
+	resize: none;
+}
+.translate-block textarea:focus{
+	outline: none;
+}
+.translate-functions{
+	float: left;
+	font: 12px/13px 'Helvetica', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	
+}
+.function-underline{
+	border-bottom: 2px dotted #5d5d5d;
+}
+.translate-functions p{
+	display: inline-block;
+}	
+.left-inter{
 
+	position: relative;
+	margin-left: 30px;
+}
+.right-inter{
+	position: relative;
+	margin-left: 35px;
+
+}
+.left-inter:after{
+	cursor: pointer;
+	top: 0px;
+	right: -25px;
+	content: "";
+	width: 56px;
+	height: 20px;
+	position: absolute;
+	background: url("../img/underline.png") no-repeat center;
+
+}
+.right-inter:after{
+	cursor: pointer;
+	top: 0px;
+	right: -15px;
+	content: "";
+	width: 50px;
+	height: 20px;
+	position: absolute;
+	background: url("../img/underline-right.png") no-repeat center;
+}
+.arrow-box{
+	cursor: pointer;
+	width: 33px;
+	height: 27px;
+	border: 2px solid #999999;
+	position: absolute;
+	top: 15px;
+	left: 150px;
+	margin: 10px auto;
+	background: url('../img/box-arrows.png') no-repeat center;
 }
