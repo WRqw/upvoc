@@ -1,17 +1,40 @@
+ @font-face {
+    font-family: 'Intro-Inline'; /* Гарнитура шрифта */
+    src: url(../fonts/Intro-Inline.otf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: 'Phosphate'; /* Гарнитура шрифта */
+    src: url(../fonts/Phosphate.ttf); /* Путь к файлу со шрифтом */
+   }
+
 body{
 	margin: 0;
 	padding: 0;
-}
-.clearfix:before,
-.clearfix:after {
-
-     content: ".";
-     display: table;
+	font-family: 'Myriad Pro';
+	font-size: 12px;
+	line-height: 14px;
 }
 .clearfix:after {
-	content: ".";
-	display: block;
-	height: 0;
+	content: "";
+	display: table;
 	clear: both;
-	visibility: hidden;
+	
+}
+.logo{
+	font-family: 'Intro-Inline';
+	color: #323232;
+	font-size: 42px;
+	line-height: 51px;
+	padding: 35px;
+}
+.logo-p{
+	padding: 0;
+	margin: 0;
+	font-family: 'Intro-Inline';
+	font-size: 8px;
+	line-height: 9px;
+}
+p{
+	margin: 0;
+	padding: 0;
 }
