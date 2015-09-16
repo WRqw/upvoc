@@ -12,7 +12,7 @@
    }
      @font-face {
     font-family: 'Condensed-Bold'; /* Гарнитура шрифта */
-    src: url(../fonts/DIN Condensed Bold.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/DINCondensedBold.ttf); /* Путь к файлу со шрифтом */
    }
    @font-face {
     font-family: 'Myriad'; /* Гарнитура шрифта */
@@ -36,11 +36,15 @@ a{
 	color: #999999;
 	text-decoration: none;
 }
+.background{
+	}
 a.register{
 	color: #5D5D5D;
 }
 ul{
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 .clearfix:after {
 	content: "";
@@ -56,6 +60,7 @@ ul{
 	padding: 35px;
 	float: left;
 	padding-top: 55px;
+	min-width: 130px;
 }
 .logo a,
 .menu a{
@@ -81,7 +86,7 @@ p{
 }
 .top-section{
 	margin-top: 43px;
-	width: 900px;
+	min-width: 890px;
 	border-bottom: 1px solid #3D434B;
 	padding-bottom: 15px;
 }
@@ -122,7 +127,9 @@ p{
 	margin-left: 30px;
 	display: inline-block;
 }
-
+.bottom-section{
+	width: 1060px;
+}
 .soc-ic a{
 	display: inline-block;
 	
@@ -148,26 +155,42 @@ p{
 }
 .menu li{
 	display: inline-block;
-	padding-left: 40px;
+	margin-left: 40px;
+	padding: 15px 0;
+	
 
 }
+.menu li:first-child{
+	margin-left: 0;
+}
 .menu{
+	margin-left: 110px;
 	text-align: center;
 	font-family: 'Condensed-Bold', sans-serif;
 	font-size: 26px;
 	line-height: 32px;
 	color: black;
 	text-transform: uppercase;
+	float: left;
+	min-width: 960px;
+
+	
 }
 .main-header{
 	border-bottom: 5px solid #E74A42;
+	width: 1366px;
+	margin: 0 auto;
 	background: #F9F9F9;
+
 }	
 .middle-section{
+	width: 1366px;
+	margin: 0 auto;
 	margin-top: 10px;
 }
 .top-line{
-	width: 100%;
+	width: 1368px;
+	margin: 0 auto;
 	background: #FFFF6D url("../img/top-line-bg.png") no-repeat;
 }
 .title-line{
@@ -232,16 +255,15 @@ p{
 }
 .left-window{
 	float: left;
-	margin-left: 100px;
+	margin-left: 30px;
 }
 .right-window{
 	float: right;
-	margin-right: 100px;
+	margin-right: 30px;
 }
 .translate-block{
 	padding: 5px 0;
 	margin-top: 10px;
-	width: 100%;
 	background: #F7F7F7;
 }
 .translate-block textarea{
@@ -256,7 +278,6 @@ p{
 	float: left;
 	font: 12px/13px 'Helvetica', sans-serif;
 	font-weight: bold;
-	text-align: center;
 	position: relative;
 	
 }
@@ -267,13 +288,13 @@ p{
 	display: inline-block;
 }	
 .left-inter{
-
+	margin-left: 15px;
 	position: relative;
-	margin-left: 50px;
+	
 }
 .right-inter{
+	margin-left: 20px;
 	position: relative;
-	margin-left: 55px;
 
 }
 .left-inter:after{
@@ -304,7 +325,7 @@ p{
 	border: 2px solid #999999;
 	position: absolute;
 	top: 15px;
-	left: 145px;
+	left: 105px;
 	margin: 10px auto;
 	background: url('../img/box-arrows.png') no-repeat center;
 }
@@ -374,21 +395,18 @@ p{
 }
 .settings-title h3:after{
 	cursor: pointer;
-	top: 13px;
-	right: 70px;
+	top: 28px;
+	right: 82px;
 	content: "";
-	width: 136px;
-	height: 15px;
+	width: 178px;
+	height: 2px;
 	position: absolute;
-	background: url("../img/settings-title-underline.png") no-repeat center;
+	background: url("../img/under-line.png") repeat center;
 
 }
 .news-title{
 	padding-left: 25px;
 	font: 15px 'Helvetica', sans-serif;
-}
-.bar{
-	width: 70%;
 }
 .range-filter{
 	width: 174px;
@@ -454,13 +472,13 @@ p{
 }
 .settings-lang h4:after{
 	cursor: pointer;
-	top: 9px;
-	right: 135px;
+	top: 17px;
+	right: 150px;
 	content: "";
-	width: 123px;
-	height: 10px;
+	width: 113px;
+	height: 2px;
 	position: absolute;
-	background: url("../img/settings-lang.png") no-repeat center;
+	background: url("../img/under-line.png") repeat center;
 }
 .settings-lang{
 	position: relative;
@@ -480,4 +498,47 @@ p{
 	font: 10px 'Helvetica', sans-serif;
 	color: #999999;
 }
+.dictionaries-section{
+	float: right;
+	width: 284px;
+	background: #F7F7F7;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+.dict-title h3{
+	font: 26px/31px 'Condensed-Bold', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-left: 25px;
+	padding-bottom: 5px;
+	color: #999999;
+	vertical-align: 30px;
 
+}
+.dict-title{
+	position: relative;
+}
+.dict-title h3:after{
+	cursor: pointer;
+	top: 28px;
+	right: 25px;
+	content: "";
+	width: 234px;
+	height: 2px;
+	position: absolute;
+	background: url("../img/under-line.png") repeat center;
+}
+.center-content{
+	float: left;
+	
+	width: 710px;
+	
+	padding-top: 20px;
+	
+}
+ .name-news{
+ 	margin-left: 30px;
+	text-align: left;
+	font: 32px 'Condensed-Bold', sans-serif;
+	color: #2A81B4;
+}
