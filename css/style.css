@@ -333,7 +333,7 @@ p{
 	float: left;
 	width: 284px;
 	background: #F7F7F7;
-	margin-left: 20px;
+	margin-left: 10px;
 	margin-top: 20px;
 	position: relative;
 }
@@ -502,7 +502,7 @@ p{
 	float: right;
 	width: 284px;
 	background: #F7F7F7;
-	margin-right: 20px;
+	margin-right: 10px;
 	margin-top: 20px;
 }
 .dict-title h3{
@@ -530,15 +530,41 @@ p{
 }
 .center-content{
 	float: left;
-	
+	margin-left: 40px;
 	width: 710px;
-	
+	color: #2A81B4;
 	padding-top: 20px;
 	
 }
  .name-news{
- 	margin-left: 30px;
+ 	display: inline-block;
+ 	width: 650px;
+ 	margin-bottom: 10px;
 	text-align: left;
 	font: 32px 'Condensed-Bold', sans-serif;
 	color: #2A81B4;
+}
+.newsinform{
+	color: #2A81B4;
+	font: 12px 'Helvetica', sans-serif;
+	margin-left: 0;
+
+}
+.news{
+	font: 17px 'Helvetica', sans-serif;
+	color: #000;
+    background: url('gradient-news.png') repeat-x;
+ 
+}
+.more-news{
+	display: inline-block;
+	margin-top: 20px;
+	font: 12px 'Helvetica', sans-serif;
+	color: #2A81B4;
+	margin-bottom: 30px;
+
+}
+.novelty{
+	border-bottom: 1px solid #E5E5E5;
+
 }
