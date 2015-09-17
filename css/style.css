@@ -459,7 +459,7 @@ p{
 	height: 1px;
 	background: #999999;
 }
-.range-controls .toggle{
+.range-controls .circle{
 	position: absolute;
 	top: 2px;
 	background: #F7F7F7;
@@ -468,10 +468,31 @@ p{
 	border:1px solid #999999;
 	border-radius: 50%;
 }
-.range-controls .mid-toggle{
+.circle1{
+	position: absolute;
+	top: 2px;
+	background: #F7F7F7;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+	display: inline-block;
+	
+}
+.circle2{
+	cursor: pointer;
+	
+}
+
+.range-controls .circle2{
 	left: 70px;
 }
-.range-controls .max-toggle{
+.range-controls .circle3{
 	left: 135px;
 	
 }
@@ -480,14 +501,41 @@ p{
 	font: 15px 'Helvetica', sans-serif;
 	color: #999999;
 }
-.center-toggle{
+ .circle3{
 	position: absolute;
-	left: 2px;
 	top: 2px;
+	background: #F7F7F7;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+}
+.circle4{
+	position: absolute;
+	top: 5px;
+	left: 138px;
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
 	background: #2A81B4;
+	cursor: pointer;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+	display: inline-block;
+	z-index: 1;
+}
+.max-toggle input[type=radio]:checked + .circle4{
+	left: 3px;
+}
+.min-toggle input[type=radio]:checked + .circle4{
+	left: 3px;
+}
+.mid-toggle input[type=radio]:checked + .circle4{
+	left: 53px;
 }
 .range-controls-hard{
 	position: absolute;
@@ -729,6 +777,7 @@ p{
 .slider-check input[type=checkbox]:checked + label {
 	left: 34px;
 }
+
 
 .slider-check input[type=checkbox]:checked + label:after {
 	background: #00bf00;
