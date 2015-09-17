@@ -450,7 +450,7 @@ p{
 .range-controls{
 	position: relative;
 	padding-top: 8px;
-		overflow: hidden;
+		
 		padding-bottom: 20px;
 		margin-left: 25px;
 }
@@ -502,7 +502,7 @@ p{
 	color: #999999;
 }
  .circle3{
-	position: absolute;
+	position: relative;
 	top: 2px;
 	background: #F7F7F7;
 	width: 12px;
@@ -510,11 +510,13 @@ p{
 	border-radius: 50%;
 	cursor: pointer;
 	display: inline-block;
+	z-index: 1000;
 }
-.circle4{
+.circle3:after{
+	content: "";
 	position: absolute;
-	top: 5px;
-	left: 138px;
+	top: 2px;
+	left: 2px;
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
@@ -526,16 +528,16 @@ p{
 	-ms-transition: all .4s ease;
 	transition: all .4s ease;
 	display: inline-block;
-	z-index: 1;
+	z-index: 10000;
 }
-.max-toggle input[type=radio]:checked + .circle4{
-	left: 3px;
+.max-toggle input[type=radio]:checked + .circle3:after{
+	left: -63px;
 }
-.min-toggle input[type=radio]:checked + .circle4{
-	left: 3px;
+.min-toggle input[type=radio]:checked .circle4{
+	left: 0;
 }
-.mid-toggle input[type=radio]:checked + .circle4{
-	left: 53px;
+.mid-toggle input[type=radio]:checked .circle4{
+	left: 70px;
 }
 .range-controls-hard{
 	position: absolute;
