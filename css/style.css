@@ -510,7 +510,7 @@ p{
 	border-radius: 50%;
 	cursor: pointer;
 	display: inline-block;
-	z-index: 1000;
+	
 }
 .circle3:after{
 	content: "";
@@ -528,17 +528,19 @@ p{
 	-ms-transition: all .4s ease;
 	transition: all .4s ease;
 	display: inline-block;
-	z-index: 10000;
+
 }
 .max-toggle input[type=radio]:checked + .circle3:after{
+	left: 2px;
+}
+#slidedifficult2:checked ~ .circle3:after{
 	left: -63px;
 }
-.min-toggle input[type=radio]:checked .circle4{
-	left: 0;
+
+#slidedifficult1:checked ~ .circle3:after{
+	left: -133px;
 }
-.mid-toggle input[type=radio]:checked .circle4{
-	left: 70px;
-}
+
 .range-controls-hard{
 	position: absolute;
 	left: 125px;
