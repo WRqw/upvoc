@@ -1,0 +1,317 @@
+@media screen and (max-width: 1366px) {
+body{
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  display: block;
+}
+#pc-container {
+  display: none;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  width: 740px;
+  margin: 0 auto;
+}
+.main-head {
+  font: 19px 'Condensed-Bold', sans-serif;
+  
+}
+.menu-m {
+  float: left;
+  margin-left: 15px;
+  padding: 20px;
+}
+.upvoc {
+  padding: 20px;
+}
+.menu-button {
+  background: #ed2756;
+  position: relative;
+}
+.login-m {
+  margin-right: 20px;
+  float: right;
+  padding: 20px;
+}
+p.open-menu {
+  color: white;
+  font: 14px 'Condensed-Bold', sans-serif;
+  text-align: center;
+  padding: 3px;
+  position: relative;
+}
+p.open-menu:after {
+  
+}
+.after-m {
+  position: relative;
+}
+.after-m:after {
+ cursor: pointer;
+  top: 2px;
+  right: -42px;
+  content: "";
+  width: 56px;
+  height: 20px;
+  position: absolute;
+  background: url("../img/native-ic-m.png") no-repeat center;
+  color: black;
+}
+
+.menu-button:after {
+ 
+}
+.my-lang {
+  padding: 20px;
+  margin-right: 40px;
+  float: right;
+}
+a.switch-lang {
+  padding: 20px;
+  border-bottom: 1px dotted white;
+  padding: 1px 1px;
+  margin-left: 40px;
+  position: relative;
+}
+.switch-lang:after {
+  cursor: pointer;
+  top: 2px;
+  right: -37px;
+  content: "";
+  width: 56px;
+  height: 20px;
+  position: absolute;
+  background: url("../img/native-ic-m.png") no-repeat center;
+}
+.top-section-m {
+  background: #b92b27;
+  
+
+}
+.bottom-section-m {
+  background: #efefef;
+}
+.bottom-section-m ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  padding-left: 0;
+}
+.main-head a {
+  color: white;
+  text-decoration: none;
+}
+.bottom-section-m a {
+  color: black;
+  display: inline-block;
+  padding: 10px;
+  margin: 6px 0;
+  border-right: 2px solid #dddddd;
+}
+.bottom-section-m a:last-child {
+  border-right: none;
+}
+.translate-line {
+  position: relative;
+  
+  background: #fffb80 url("../img/top-line-bg.png") no-repeat;
+  
+}
+.advice {
+  padding-left: 30px;
+  font: 16px/18px 'Helvetica', sans-serif;
+  vertical-align: middle;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #515450;
+}
+.word {
+  padding: 12px;
+  font: 16px 'Myriad', sans-serif;
+  margin: 0;
+  color: #68675f;
+}
+.allocation-m{
+  margin-left: 200px;
+  float: left;
+}
+.titlebox-m{
+
+  float: left;
+}
+ .name-news-m{
+  display: inline-block;
+  width: 650px;
+  margin-bottom: 10px;
+  text-align: left;
+  font: 32px 'Condensed-Bold', sans-serif;
+  
+}
+.name-news-m a {
+  color: #2980b9;
+}
+.newsinform{
+  color: #2A81B4;
+  font: 12px 'Helvetica', sans-serif;
+  margin-left: 0;
+
+}
+.news{
+  font: 17px 'Helvetica', sans-serif;
+  color: #000;
+    background: url('gradient-news.png') repeat-x;
+ 
+}
+.more-news{
+  display: inline-block;
+  margin-top: 20px;
+  font: 12px 'Helvetica', sans-serif;
+  color: #2A81B4;
+  margin-bottom: 30px;
+
+}
+.novelty{
+  border-bottom: 1px solid #E5E5E5;
+}
+.content {
+  width: 700px;
+  margin: 0 auto;
+}
+.close{
+  position: absolute;
+  top: 9px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  float: right;
+  font-size: 0;
+  cursor: pointer;
+  background: url("../img/show-cross.png") no-repeat;
+  background-size: 30%;
+}
+.upvoc {
+  font: 15px 'Intro-Inline', sans-serif;
+  float: left;
+  margin-left: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+    #wrapper {
+      width: 95%;
+   }
+   .content {
+    width: 90%;
+   }
+   
+}
+@media screen and (max-width: 650px) {
+  
+
+ 
+}
+
+@media screen and (max-width: 480px) {
+
+   html {
+      -webkit-text-size-adjust: none;
+   }
+   .bottom-section-m a li {
+      font-size: 80%;
+      
+   }
+   .bottom-section-m a {
+    
+
+   }
+   .bottom-section-m li {
+      text-align: center;
+
+   }
+   .bottom-section ul {
+    padding-left: 0;
+   }
+   .name-news-m {
+    width: 250px;
+   }
+
+  .name-news a {
+    font: 18px 'Condensed-Bold', sans-serif;
+  }
+  .news{
+  font: 14px 'Helvetica', sans-serif;
+}
+.advice {
+font: 11px 'Helvetica', sans-serif;
+padding-top: 7px;
+padding-bottom: 0;
+margin-bottom: 5px;
+}
+.word {
+ padding: 0;
+ margin-top: 7px;
+ margin-left: 30px;
+  font: 9px 'Myriad', sans-serif;
+ 
+ 
+}
+.allocation {
+  margin-left: 20px;
+}
+.translate-line {
+  
+  background: #fffb80 url("../img/top-line-bg.png") no-repeat;
+  background-size: 50%;
+  
+}
+.close{
+  position: absolute;
+  top: 1px;
+  right: -3px;
+  width: 10px;
+  height: 10px;
+  float: right;
+  font-size: 0;
+  cursor: pointer;
+  background: url("../img/show-cross.png") no-repeat;
+  background-size: 60%;
+}
+}
