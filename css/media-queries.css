@@ -36,7 +36,11 @@ header {
   padding: 20px;
 }
 .upvoc {
-  padding: 20px;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font: 15px 'Intro-Inline', sans-serif;
+  float: left;
 }
 .menu-button {
   background: #ed2756;
@@ -46,6 +50,32 @@ header {
   margin-right: 20px;
   float: right;
   padding: 20px;
+  position: relative;
+}
+.login-m:after {
+   position: absolute;
+  top: 28px;
+  right: -3px;
+  width: 10px;
+  height: 10px;
+  float: right;
+  font-size: 0;
+  cursor: pointer;
+  background: url("../img/enter.png") no-repeat;
+  content: '';
+  
+}
+.close{
+  position: absolute;
+  top: 1px;
+  right: -3px;
+  width: 10px;
+  height: 10px;
+  float: right;
+  font-size: 0;
+  cursor: pointer;
+  background: url("../img/show-cross.png") no-repeat;
+  background-size: 60%;
 }
 p.open-menu {
   color: white;
@@ -62,7 +92,7 @@ p.open-menu:after {
 }
 .after-m:after {
  cursor: pointer;
-  top: 2px;
+  top: -1px;
   right: -42px;
   content: "";
   width: 56px;
@@ -204,11 +234,7 @@ a.switch-lang {
   background: url("../img/show-cross.png") no-repeat;
   background-size: 30%;
 }
-.upvoc {
-  font: 15px 'Intro-Inline', sans-serif;
-  float: left;
-  margin-left: 45px;
-}
+
 
 
 
@@ -254,6 +280,30 @@ a.switch-lang {
    html {
       -webkit-text-size-adjust: none;
    }
+   .upvoc {
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font: 9px 'Intro-Inline', sans-serif;
+  float: left;
+  }
+  .main-head {
+  font: 10px 'Condensed-Bold', sans-serif;
+  
+}
+.my-lang {
+  padding: 20px;
+  margin-right: 10px;
+  float: right;
+}
+a.switch-lang {
+  padding: 20px;
+  border-bottom: 1px dotted white;
+  padding: 1px 1px;
+  margin-left: 10px;
+  position: relative;
+}
+
    .bottom-section-m a li {
       font-size: 80%;
       
@@ -288,13 +338,14 @@ margin-bottom: 5px;
 .word {
  padding: 0;
  margin-top: 7px;
- margin-left: 30px;
+ margin-left: 20px;
   font: 9px 'Myriad', sans-serif;
  
  
 }
-.allocation {
-  margin-left: 20px;
+.allocation-m {
+  margin-left: 10px;
+  float: right;
 }
 .translate-line {
   
@@ -312,6 +363,7 @@ margin-bottom: 5px;
   font-size: 0;
   cursor: pointer;
   background: url("../img/show-cross.png") no-repeat;
-  background-size: 60%;
+  background-size: 10%;
 }
+
 }
