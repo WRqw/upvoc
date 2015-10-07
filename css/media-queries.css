@@ -291,6 +291,41 @@ a.switch-lang {
   font: 10px 'Condensed-Bold', sans-serif;
   
 }
+.close{
+  position: absolute;
+  top: 9px;
+  left: 280px;
+  width: 12px;
+  height: 12px;
+  float: right;
+  font-size: 0;
+  cursor: pointer;
+  background: url("../img/show-cross.png") no-repeat;
+  
+}
+.login-m:after {
+   position: absolute;
+  top: 21px;
+  right: -3px;
+  width: 10px;
+  height: 10px;
+  float: right;
+  font-size: 0;
+  cursor: pointer;
+  background: url("../img/enter.png") no-repeat;
+  content: '';
+}
+
+.switch-lang:after {
+  cursor: pointer;
+  top: -1px;
+  right: -37px;
+  content: "";
+  width: 56px;
+  height: 20px;
+  position: absolute;
+  background: url("../img/native-ic-m.png") no-repeat center;
+}
 .my-lang {
   padding: 20px;
   margin-right: 10px;
