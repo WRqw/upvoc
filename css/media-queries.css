@@ -78,14 +78,15 @@ header {
 }
 .login-m:after {
    position: absolute;
-  top: 28px;
-  right: -3px;
-  width: 10px;
-  height: 10px;
+  top: 25px;
+  right: -13px;
+  width: 22px;
+  height: 22px;
   float: right;
   font-size: 0;
   cursor: pointer;
-  background: url("../img/enter.png") no-repeat;
+  background: url("../img/enter-sprite.png") no-repeat;
+  background-size: 80%;
   content: '';
   
 }
@@ -273,7 +274,7 @@ a.switch-lang {
 }
  .name-news-m{
   display: inline-block;
-  width: 300px;
+  width: 90%;
   margin-bottom: 10px;
   text-align: left;
   font: 32px 'Condensed-Bold', sans-serif;
@@ -452,14 +453,14 @@ a.switch-lang {
 } 
   .login-m:after {
    position: absolute;
-  top: 5px;
-  right: -3px;
-  width: 10px;
-  height: 10px;
+  top: 24px;
+  right: -13px;
+  width: 20px;
+  height: 20px;
   float: right;
   font-size: 0;
   cursor: pointer;
-  background: url("../img/enter.png") no-repeat;
+  background: url("../img/enter-sprite.png") no-repeat;
   content: '';
 }
  
@@ -491,12 +492,13 @@ a.switch-lang {
    position: absolute;
   top: 21px;
   right: -3px;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   float: right;
   font-size: 0;
   cursor: pointer;
-  background: url("../img/enter.png") no-repeat;
+  background: url("../img/enter-sprite.png") no-repeat;
+  background-size: 60%;
   content: '';
 }
 
