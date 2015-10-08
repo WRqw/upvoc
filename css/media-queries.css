@@ -333,6 +333,7 @@ a.switch-lang {
 .mobile-panel {
   width: 80%;
   margin: 0 auto;
+  display: none;
 }
 .left-title-auto-m,
 .left-title-word-m
@@ -619,6 +620,10 @@ margin-bottom: 5px;
   margin-top: 30px;
   margin-bottom: 80px;
   margin-left: 40px;
+}
+.sorting-block {
+  width: 120%;
+  margin: 0 auto;
 }
 
 }
