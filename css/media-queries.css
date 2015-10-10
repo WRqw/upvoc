@@ -1043,16 +1043,47 @@ line-height: 25px;
 
 }
 @media screen and (max-width: 370px) {
-      .bottom-section-m a li {
-      font-size: 80%;
-      font: 20px 'Condensed-Bold';
-    }
    .upvoc {
   margin-left: 5px;
   padding-top: 20px;
-  padding-bottom: 20px;
-  font: 21px 'Intro-Inline', sans-serif;
+  padding-bottom: 0;
+  font: 18px 'Intro-Inline', sans-serif;
   float: left;
+}
+.bottom-section-m a li {
+      font: 22px 'Condensed-Bold', sans-serif;
+}
+.left-title-auto-m {
+  margin-left: 13px;
+}
+.news-filter {
+  width: 14px;
+  float: left;
+  font: 9px 'Roboto-Regular', sans-serif;
+    margin: 0;
+    margin-left: 5px;
+}
+.mobile-dict {
+  margin-left: 0;
+}
+.left-title-word-m {
+  margin-left: 2px;
+}
+.mobile-slider2 {
+  margin-left: 0;
+}
+.news {
+  width: 90%;
+  font-size: 13px;
+}
+.upvoc {
+  padding-top: 15px;
+}
+p.login-m {
+  padding-top: 21px;
+}
+p.login-m:after {
+  top: 22px;
 }
 .main-head {
   font: 10px 'Roboto Slab', sans-serif;
