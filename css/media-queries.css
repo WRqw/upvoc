@@ -61,6 +61,46 @@ header {
   margin-left: 15px;
   padding: 20px;
 }
+select.switch-lang {
+  background: #b92b27;
+  border: none;
+  font: 13px 'Roboto Slab', sans-serif;
+  color: white;
+  margin-left: 5px;
+  padding-right: 3px;
+  border-bottom: 1px dotted white;
+  appearance: white;
+  position: relative;
+  
+}
+.login-form-mobile{
+  display: inline-block;
+  z-index: 1000;
+  position: absolute;
+  top: 35px;
+  
+}
+.login,
+.password {
+  padding: 3px 5px;
+  font-family: 'Helvetica', sans-serif;
+  color: #ccc;
+  border: 1px solid #3D434B;
+  outline: none;
+  font-style: italic;
+  margin-left: 80px;
+  width: 80px;
+}
+.log-in a{
+  display: inline-block;
+  width: 28px;
+  height: 24px;
+  background: url('../img/form-login.png') no-repeat;
+  position: absolute;
+  bottom: -6px;
+  right: -2px;
+}
+
 .upvoc {
   margin-left: 20px;
   padding-top: 20px;
@@ -530,10 +570,11 @@ a.more-news {
   content: '';
 }
 .dictionary-m{
-  width: 120%; 
-  height: auto;
+   
+  height: 70px;
   overflow-y: scroll;
     overflow-x: hidden;
+
 
 
   
@@ -591,6 +632,7 @@ a.more-news {
     #wrapper {
       width: 100%;
    }
+
    .upvoc {
   margin-left: 20px;
   padding-top: 20px;
@@ -605,6 +647,22 @@ a.more-news {
   
 
   
+}
+#slidedifficult2-m:checked ~ .circle3:after{
+  left: -39px;
+}
+
+#slidedifficult1-m:checked ~ .circle3:after{
+  left: -79px;
+}
+select.switch-lang:after {
+  cursor: pointer;
+  top: 5px;
+  content: "123234123";
+  width: 56px;
+  height: 20px;
+  position: absolute;
+  background: url("../img/native-ic-m.png") no-repeat center;
 }
 .bottom-section-m a {
   color: black;
@@ -673,7 +731,7 @@ a.more-news {
 }
 .my-lang {
   padding: 20px;
-  padding-top: 20px;
+  padding-top: 16px;
   margin-right: 10px;
   float: right;
   padding-bottom: 0;
@@ -707,10 +765,11 @@ a.switch-lang {
     font: 20px/5px 'Condensed-Bold', sans-serif;
   }
   .news{
-    width: 100%;
+    width: 95%;
   font: 15px 'Lora', sans-serif;
   vertical-align: 13px;
   text-align: left;
+  margin-right: 20px;
 }
 .advice {
 font: 11px 'Helvetica', sans-serif;
@@ -819,9 +878,8 @@ margin-bottom: 5px;
 .main-head {
   font: 12px 'Roboto Slab', sans-serif;
 }
-.dictionary-m{
-  width: 120%; 
-  height: auto;
+.dictionary-m{ 
+  height: 70px;
   overflow-y: scroll;
     overflow-x: hidden;
 
@@ -1053,6 +1111,24 @@ line-height: 25px;
 .bottom-section-m a li {
       font: 22px 'Condensed-Bold', sans-serif;
 }
+.login-form-mobile{
+  display: inline-block;
+  z-index: 1000;
+  position: absolute;
+  top: 35px;
+  
+}
+.login,
+.password {
+  padding: 3px 5px;
+  font-family: 'Helvetica', sans-serif;
+  color: #ccc;
+  border: 1px solid #3D434B;
+  outline: none;
+  font-style: italic;
+  margin-left: 50px;
+  width: 80px;
+}
 .left-title-auto-m {
   margin-left: 13px;
 }
@@ -1100,6 +1176,7 @@ p.login-m:after {
 .my-lang {
   padding-left: 0;
   margin-right: 20px;
+
 }
 .login-m:after {
    position: absolute;

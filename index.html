@@ -81,7 +81,7 @@
 					<textarea name="" id="" cols="30" rows="3"></textarea>
 				</div>
 			</div>
-
+		
 			<div class="settings-section clearfix">
 				<div class="settings-title">
 					<h3><a href="#">My Settings</a></h3>
@@ -247,8 +247,12 @@ Third Major Outage On Monday</a></h2>
 			<div class="top-section-m clearfix">
 				<a href="#"><p class="upvoc">Upvoc</p></a>
 				<a href="#"><p class="login-m">Login</p></a>
-				<a href="#"><p class="my-lang">My Language: <a href="#" class='switch-lang'>RUS</a></p></a>
-			</div>	
+				<a href="#"><p class="my-lang">My Language: <select class='switch-lang'><option value="1">RUS</option>
+				<option value="2">ENG</option>
+				<option value="3">GRE</option>
+				<option value="4">TUR</option>
+				<option value="5">SPA</option></p></select></a>
+			</div>
 			<div class="bottom-section-m">
 				<ul>
 					<a href="#"><li>World</li></a>
@@ -382,6 +386,11 @@ Third Major Outage On Monday</a></h2>
 				<p class="news"><span></span>The transition from traditional cable and satellite TV service to online streaming is not without its issues, as Dish’s Sling TV subscribers can attest to. The web-based streaming platform experienced a significant outage last night its third sizable outage to date which brought the service down for hours. The issue affected users across platforms, including web...</p>
 				<a href="" class="more-news">See more...</a>
 		</div>
+		<form action="/echo" method="post" class="login-form-mobile">
+						<input type="text" class="login" placeholder="Login">
+						<input type="password" class="password" placeholder="Password">
+						<div class="log-in"><a href="#"></a></div>
+		</form>
 	</div>
 </body>
 </html>
