@@ -645,6 +645,85 @@ a.more-news {
 
   
 }
+a.registration-link {
+  display: inline-block;
+  margin-left: 20px;
+  font: 9px 'Roboto-Regular', sans-serif;
+  text-transform: none;
+  margin-bottom: 30px;
+  border-bottom: 1px dotted grey;
+  color: grey;
+}
+.login-form-mobile-inputs input[type='text'] {
+  width: 125px;
+  margin: 0 auto;
+  margin-top: 2px;
+  padding-left: 15px;
+  outline: none;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 10px;
+  border: 1px solid #9a9e9e;
+  display: block;
+}
+.login-form-mobile-inputs {
+  margin-top: 10px;
+}
+.login-mobile-block {
+  width: 120px;
+  height: 80px;
+  background: #bdf9fd; 
+  z-index: 10000000;
+  position: fixed;
+  margin: 5% auto;
+  left: 0;
+  right: 0;
+  margin-top: 150px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.enter-login {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5px;
+  color: black;
+  background: #3e78ad;
+  width: 35px;
+  color: white;
+  border-radius: 2px;
+  text-transform: none;
+  font: 11px Times New Roman, sans-serif;
+  color: #fff;
+
+
+
+}
+.login-checkbox-m input[type="checkbox"] {
+  width: 5px;
+  display: block;
+}
+.remember {
+  font-size: 9px;
+  font-family: 'Helvetica-Neu';
+  font-weight: normal;
+  text-transform: none;
+  display: inline-block;
+  position: relative;
+  bottom: 3px;
+}
+a.forgotpass{
+  color: #5D5D5D;
+   font-size: 9px;
+  font-family: 'Helvetica-Neu';
+  font-weight: normal;
+  text-transform: none;
+  margin-right: 66px;
+  padding-top: 2px;
+  border-bottom: 1px dotted grey;
+}
+.position-checkbox {
+  margin-right: 70px;
+}
+
 .login-form-mobile {
   margin-left: 50px;
   width: 100px;
@@ -1124,7 +1203,7 @@ line-height: 25px;
 }
 .mobile-form {
   width: 180px;
-  height: 200px;
+  height: 220px;
   background: #edf8ff;
   display: block;
   margin: 5% auto;
@@ -1136,7 +1215,45 @@ line-height: 25px;
   text-align: center;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: none;
 
+}
+.mobile-form-registration {
+  width: 180px;
+  height: 220px;
+  background: #edf8ff;
+  display: block;
+  margin: 5% auto;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  z-index: 10000;
+  position: fixed;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+}
+.mobile-form-registration input {
+  margin-top: 15px;
+  font-family: 'PT Sans Narrow';
+  width: 90%;
+}
+.button-registr {
+  border-bottom: 2px solid grey;
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.mobile-form-registration:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  top: 1px;
+  right: 3px;
+  position: absolute;
+  background: url("../img/show-cross.png") no-repeat;
+  background-size: 80%;
+  background-position: center;
 }
 .mobile-form:after {
   content: '';
@@ -1417,6 +1534,7 @@ p.login-m:after {
   text-align: center;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: none;
 
 }
 .mobile-form:after {
@@ -1617,6 +1735,43 @@ a.forgotpass{
 }
 .position-checkbox {
   margin-right: 70px;
+}
+.mobile-form-registration {
+  width: 180px;
+  height: 220px;
+  background: #edf8ff;
+  display: block;
+  margin: 5% auto;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  z-index: 10000;
+  position: fixed;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+}
+.mobile-form-registration input {
+  margin-top: 15px;
+  font-family: 'PT Sans Narrow';
+  width: 90%;
+}
+.button-registr {
+  border-bottom: 2px solid grey;
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.mobile-form-registration:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  top: 1px;
+  right: 3px;
+  position: absolute;
+  background: url("../img/show-cross.png") no-repeat;
+  background-size: 80%;
+  background-position: center;
 }
 
 
